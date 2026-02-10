@@ -1,0 +1,103 @@
+<div class="min-h-screen bg-gray-200 py-12 flex flex-col items-center font-sans">
+
+  <button class="fixed top-6 right-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full shadow-2xl transition-all z-10 cursor-pointer" (click)="gerar()">
+    Gerar .docx ABNT
+  </button>
+
+  <div class="bg-white shadow-[0_0_50px_rgba(0,0,0,0.2)] w-[210mm] min-h-[297mm] p-[3cm_2cm_2cm_3cm] box-border text-black">
+    
+    <div class="flex flex-col items-center text-center uppercase font-bold text-[12pt] space-y-1">
+      <div #inputInstituicao contenteditable="true" class="outline-none p-4 cursor-pointer hover:bg-gray-300 border border-gray-300 transition-all">Nome da Instituição</div>
+      <div class="h-16"></div> <div #inputNomeAluno contenteditable="true" id="input-aluno" class="outline-none cursor-pointer hover:bg-gray-300 border border-gray-300 transition-all p-4">Nome do Aluno</div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center text-center mt-[10cm]">
+      <div #inputTituloTrabalho contenteditable="true" id="input-titulo" class="outline-none font-bold text-[12pt] uppercase cursor-pointer hover:bg-gray-300 border border-gray-300 transition-all p-4">
+        Título do Trabalho: Subtítulo se houver
+      </div>
+    </div>
+
+    <div class="mt-auto pt-[10cm] flex flex-col items-center text-center uppercase font-bold text-[12pt]">
+      <div #inputCidade contenteditable="true" class="outline-none w-full">Cidade - UF</div>
+      <div #inputAno contenteditable="true" class="outline-none w-full">2026</div>
+    </div>
+
+  </div>
+ 
+
+<div class="mt-10 bg-white shadow-[0_0_50px_rgba(0,0,0,0.2)] w-[210mm] min-h-[297mm] p-[3cm_2cm_2cm_3cm] box-border relative flex flex-col">
+    
+    <div class="text-center uppercase font-bold text-[12pt]">
+      <div contenteditable="true" #inputAluno class="outline-none">NOME DO ALUNO</div>
+    </div>
+
+    <div class="mt-[6cm] text-center uppercase font-bold text-[12pt]">
+      <div contenteditable="true" #inputTitulo class="outline-none">TÍTULO DO TRABALHO</div>
+    </div>
+
+    <div class="mt-8 flex justify-end">
+      <div 
+        contenteditable="true" 
+        #inputNatureza
+        class="w-1/2 text-justify text-[10pt] leading-tight outline-none italic border-l-2 border-transparent focus:border-blue-200 pl-2">
+        Trabalho acadêmico apresentado à disciplina de [Nome da Disciplina] do curso de [Nome do Curso] da [Nome da Instituição], como requisito parcial para obtenção de nota.
+      </div>
+    </div>
+
+    <div class="mt-4 flex justify-end">
+      <div class="w-1/2 text-[10pt]">
+        Orientador: Prof. Dr. Fulano de Tal
+      </div>
+    </div>
+
+   <div class="mt-auto text-center uppercase font-bold text-[12pt] space-y-1">
+      <div contenteditable="true" #inputCidade class="outline-none">CIDADE - UF</div>
+      <div contenteditable="true" #inputAno class="outline-none">2026</div>
+    </div>
+
+  </div>
+
+<div class="mt-10 bg-white shadow-2xl w-[210mm] min-h-[297mm] p-[3cm_2cm_2cm_3cm] flex flex-col box-border font-serif">
+  
+  <h2 class="text-center font-bold text-[12pt] uppercase mb-10">Sumário</h2>
+
+  <div class="flex items-baseline w-full text-[12pt] mb-2 uppercase font-bold">
+    <span>1 Introdução</span>
+    <div class="flex-grow border-b border-dotted border-black mx-1 mb-1"></div>
+    <span>4</span>
+  </div>
+
+  <div class="flex items-baseline w-full text-[12pt] mb-2 uppercase">
+    <span>1.1 Objetivos</span>
+    <div class="flex-grow border-b border-dotted border-black mx-1 mb-1"></div>
+    <span>5</span>
+  </div>
+
+  <div class="flex items-baseline w-full text-[12pt] mb-2 uppercase">
+    <span>2 Desenvolvimento</span>
+    <div class="flex-grow border-b border-dotted border-black mx-1 mb-1"></div>
+    <span>6</span>
+  </div>
+
+</div>
+
+
+  <div class="mt-10 bg-white shadow-[0_0_50px_rgba(0,0,0,0.2)] w-[210mm] min-h-[297mm] p-[3cm_2cm_2cm_3cm] box-border relative">
+    
+    <div class="absolute top-[2cm] right-[2cm] text-[10pt] font-sans">4</div>
+
+    <div #inputIntroducao contenteditable="true" class="font-bold text-[12pt] uppercase mb-8 outline-none">
+      1. Introdução
+    </div>
+
+    <div 
+      #inputContext
+      contenteditable="true" 
+      class="text-[12pt] leading-[1.5] text-justify indent-[1.25cm] outline-none break-words">
+      De acordo com a NBR 14724, o texto deve ser digitado em cor preta, utilizando fonte tamanho 12 para o corpo do trabalho. As margens devem ser de 3 cm para as bordas superior e esquerda, e de 2 cm para as bordas inferior e direita. O espaçamento entre linhas deve ser de 1,5, exceto para citações longas e notas de rodapé.
+    </div>
+  </div>
+
+ 
+
+</div>
